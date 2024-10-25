@@ -35,6 +35,10 @@ class CreateGreetingCardActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "The title or content is not filled!", Snackbar.LENGTH_LONG).show()
                 return@setOnClickListener
             }
+            if (title.length > 20 || content.length > 370) {
+                Snackbar.make(binding.root, "The title or content is too filled!", Snackbar.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
             when (greetingCard) {
                 1 -> {
                     val intent = Intent(this@CreateGreetingCardActivity, FirstGreetingCardActivity::class.java)

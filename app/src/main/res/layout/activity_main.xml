@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/list_of_greeting_card"
         android:gravity="center"
-        android:textColor="#000000"
+        android:textColor="@color/material_dynamic_neutral0"
         style="@style/TextAppearance.Material3.HeadlineLarge"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
@@ -44,7 +44,7 @@
                     android:orientation="vertical">
 
                     <!-- Media -->
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
                         app:srcCompat="@drawable/greeting_card_1"
@@ -56,11 +56,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/first_greeting_card_title"
+                            android:textColor="@color/material_dynamic_neutral0"
                             android:textAppearance="?attr/textAppearanceTitleMedium"
                             />
                     </LinearLayout>
@@ -97,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
                         app:srcCompat="@drawable/greeting_card_2"
@@ -109,11 +110,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/second_greeting_card_title"
+                            android:textColor="@color/material_dynamic_neutral0"
                             android:textAppearance="?attr/textAppearanceTitleMedium"
                             />
                     </LinearLayout>
@@ -151,10 +153,11 @@
                     android:orientation="vertical">
 
                     <!-- Media -->
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
                         app:srcCompat="@drawable/greeting_card_3"
+                        android:rotation="180"
                         android:scaleType="centerInside"
                         />
 
@@ -163,11 +166,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/third_greeting_card_title"
+                            android:textColor="@color/material_dynamic_neutral0"
                             android:textAppearance="?attr/textAppearanceTitleMedium"
                             />
                     </LinearLayout>
