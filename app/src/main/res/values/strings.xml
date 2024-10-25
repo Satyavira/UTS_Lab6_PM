@@ -5,4 +5,7 @@
     <string name="second_greeting_card_title">Invitation Card</string>
     <string name="third_greeting_card_title">Christmas Card</string>
     <string name="list_of_greeting_card">List of Greeting Card</string>
+    <string name="create_greeting_card">Create Greeting Card</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
 </resources>
