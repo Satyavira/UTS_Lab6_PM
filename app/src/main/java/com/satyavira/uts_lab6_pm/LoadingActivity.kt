@@ -22,6 +22,7 @@ class LoadingActivity : AppCompatActivity() {
             delay(5000)
             val intent = Intent(this@LoadingActivity, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

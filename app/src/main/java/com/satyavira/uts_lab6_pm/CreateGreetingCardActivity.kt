@@ -35,25 +35,29 @@ class CreateGreetingCardActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "The title or content is not filled!", Snackbar.LENGTH_LONG).show()
                 return@setOnClickListener
             }
-            if (greetingCard == 1) {
-                val intent = Intent(this@CreateGreetingCardActivity, FirstGreetingCardActivity::class.java)
-                intent.putExtra("title", title)
-                intent.putExtra("content", content)
-                startActivity(intent)
-            } else if (greetingCard == 2) {
+            when (greetingCard) {
+                1 -> {
+                    val intent = Intent(this@CreateGreetingCardActivity, FirstGreetingCardActivity::class.java)
+                    intent.putExtra("title", title)
+                    intent.putExtra("content", content)
+                    startActivity(intent)
+                }
+                2 -> {
                 val intent = Intent(this@CreateGreetingCardActivity, SecondGreetingCardActivity::class.java)
                 intent.putExtra("title", title)
                 intent.putExtra("content", content)
                 startActivity(intent)
-            } else {
+                }
+                3 -> {
                 val intent = Intent(this@CreateGreetingCardActivity, ThirdGreetingCardActivity::class.java)
                 intent.putExtra("title", title)
                 intent.putExtra("content", content)
                 startActivity(intent)
+                }
             }
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

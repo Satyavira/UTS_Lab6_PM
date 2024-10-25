@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         binding.btCard3.setOnClickListener {
             goToCreateGreetingCardActivity(3)
         }
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
     }
     private fun goToCreateGreetingCardActivity(greetingCard: Int) {
         val intent = Intent(this@MainActivity, CreateGreetingCardActivity::class.java)
