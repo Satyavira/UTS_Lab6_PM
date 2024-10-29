@@ -8,4 +8,5 @@
     <string name="create_greeting_card">Create Greeting Card</string>
     <string name="title">Title</string>
     <string name="content">Content</string>
+    <string name="save">Save</string>
 </resources>

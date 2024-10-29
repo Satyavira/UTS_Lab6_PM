@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.UTS_Lab6_PM" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/my_dark_primary</item>
+        <item name="colorOnPrimary">@color/my_light_primary</item>
+        <item name="colorSecondary">@color/my_light_primary</item>
+        <item name="colorOnBackground">@color/my_dark_on_primary</item>
     </style>
 
-    <style name="Theme.UTS_Lab6_PM" parent="Base.Theme.UTS_Lab6_PM" />
+    <style name="Theme.UTS_Lab6_PM" parent="Base.Theme.UTS_Lab6_PM"/>
+
+
+
+    <style name="card_text">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+    </style>
+
+    <style name="card_color">
+        <item name="cardBackgroundColor">@color/my_light_card</item>
+    </style>
 </resources>

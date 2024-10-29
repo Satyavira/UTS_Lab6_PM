@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#FF000000</color>
+    <color name="my_light_primary">#000000</color>
+    <color name="my_dark_primary">#FFCB74</color>
+    <color name="my_dark_on_primary">#111111</color>
+    <color name="my_dark_card">#302A18</color>
+    <color name="my_light_card">#B3B3B3</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

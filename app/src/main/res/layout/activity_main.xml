@@ -36,14 +36,13 @@
                 android:id="@+id/card_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                style="@style/card_color"
                 android:layout_margin="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
-                    <!-- Media -->
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
@@ -61,8 +60,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/first_greeting_card_title"
-                            android:textColor="@color/material_dynamic_neutral0"
-                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            style="@style/card_text"
                             />
                     </LinearLayout>
 
@@ -92,6 +90,7 @@
                 android:id="@+id/card_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                style="@style/card_color"
                 android:layout_margin="8dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -115,8 +114,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/second_greeting_card_title"
-                            android:textColor="@color/material_dynamic_neutral0"
-                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            style="@style/card_text"
                             />
                     </LinearLayout>
 
@@ -146,6 +144,7 @@
                 android:id="@+id/card_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                style="@style/card_color"
                 android:layout_margin="8dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,8 +170,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/third_greeting_card_title"
-                            android:textColor="@color/material_dynamic_neutral0"
-                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            style="@style/card_text"
                             />
                     </LinearLayout>
 

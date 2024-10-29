@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.UTS_Lab6_PM" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/my_dark_on_primary</item>
+        <item name="colorOnPrimary">@color/my_dark_primary</item>
+    </style>
+
+    <style name="card_color">
+        <item name="cardBackgroundColor">@color/my_dark_card</item>
     </style>
 </resources>
