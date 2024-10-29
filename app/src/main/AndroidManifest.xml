@@ -17,12 +17,15 @@
             android:exported="false" />
         <activity
             android:name=".ThirdGreetingCardActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".SecondGreetingCardActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".FirstGreetingCardActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".LoadingActivity"
